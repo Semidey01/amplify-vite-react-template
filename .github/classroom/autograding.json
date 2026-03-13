@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "Step 5: deleteTodo function exists",
+      "setup": "npm install",
+      "run": "npx vitest run --reporter=verbose -t 'should define a deleteTodo function'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 15
+    },
+    {
+      "name": "Step 5: deleteTodo calls client.models.Todo.delete",
+      "setup": "",
+      "run": "npx vitest run --reporter=verbose -t 'should call client.models.Todo.delete'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 15
+    },
+    {
+      "name": "Step 5: onClick handler calls deleteTodo",
+      "setup": "",
+      "run": "npx vitest run --reporter=verbose -t 'should attach an onClick handler'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 10
+    },
+    {
+      "name": "Step 6: Authenticator import in main.tsx",
+      "setup": "",
+      "run": "npx vitest run --reporter=verbose -t 'should import Authenticator'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 10
+    },
+    {
+      "name": "Step 6: Amplify UI styles imported in main.tsx",
+      "setup": "",
+      "run": "npx vitest run --reporter=verbose -t 'should import @aws-amplify/ui-react styles'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 10
+    },
+    {
+      "name": "Step 6: App wrapped with Authenticator",
+      "setup": "",
+      "run": "npx vitest run --reporter=verbose -t 'should wrap the App component'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 10
+    },
+    {
+      "name": "Step 6: useAuthenticator imported in App.tsx",
+      "setup": "",
+      "run": "npx vitest run --reporter=verbose -t 'should import useAuthenticator'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 10
+    },
+    {
+      "name": "Step 6: signOut destructured from useAuthenticator",
+      "setup": "",
+      "run": "npx vitest run --reporter=verbose -t 'should destructure signOut'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 10
+    },
+    {
+      "name": "Step 6: Sign-out button rendered",
+      "setup": "",
+      "run": "npx vitest run --reporter=verbose -t 'should render a sign-out button'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 120,
+      "points": 10
+    }
+  ]
+}

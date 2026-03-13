@@ -1,0 +1,42 @@
+name: GitHub Classroom Autograding
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  autograding:
+    name: Autograding
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Autograding Reporter
+        uses: classroom-resources/autograding-io-grader@v1
+        if: always()
+        with:
+          test-name: "Step 5 & 6: Frontend Updates"
+          setup-command: ""
+          command: "npm test"
+          timeout: 10
+          max-score: 100
